@@ -60,8 +60,8 @@ Example Response:
 }
 ```
 
-(Authenticated)
-## GET /users
+
+## GET /users (Authenticated)
 There is no argument required for this endpoint, just ensure to include the jwt token in the authorization bearer header for this endpoint to work
 
 Gets user information
@@ -76,8 +76,7 @@ Example Response
   "designation": null
 }
 ```
-(Authenticated)
-## GET /users/delete
+## GET /users/delete (Authenticated)
 There is no argument required for this endpoint, just ensure to include the jwt token in the authorization bearer header for this endpoint to work
 
 Deletes User
@@ -88,8 +87,8 @@ Deletes User
 }
 ```
 
-(Authenticated)
-## PUT /users/update
+
+## PUT /users/update (Authenticated)
 ## Arguments
 - FirstName (Optional Field)       
 - LastName (Optional Field)
@@ -141,8 +140,8 @@ Example Response
 }
 ```
 
-(Authenticated)
-## Delete /admin/delete
+
+## Delete /admin/delete (Authenticated)
 ## Arguments
 - Email       
 Deletes user 
