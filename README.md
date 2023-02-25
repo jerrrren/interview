@@ -15,6 +15,8 @@ API URL:http://newproject-dev.ap-southeast-1.elasticbeanstalk.com
 8. DELETE /admin/delete
 
 ## POST /signup
+Create new user
+
 ### Arguments
 
 - FirstName        
@@ -38,12 +40,13 @@ Example Request:
 ```
 
 ## POST /login
+
+Gets JWT token for endpoint authentication
+
 ### Arguments
 
 - Email
 - Password
-
-Returns JWT token 
 
 Example Request:
 ```
@@ -76,10 +79,10 @@ Example Response
   "designation": null
 }
 ```
-## GET /users/delete (Authenticated)
-There is no argument required for this endpoint, just ensure to include the jwt token in the authorization bearer header for this endpoint to work
 
-Deletes User
+## GET /users/delete (Authenticated)
+Deletes user
+There is no argument required for this endpoint, just ensure to include the jwt token in the authorization bearer header for this endpoint to work
 
 ```
 {
@@ -87,8 +90,9 @@ Deletes User
 }
 ```
 
-
 ## PUT /users/update (Authenticated)
+Updates user Details
+
 ### Arguments
 - FirstName (Optional Field)       
 - LastName (Optional Field)
@@ -96,8 +100,6 @@ Deletes User
 - Email (Optional Field)
 - Company: (Optional Field)
 - Designation (Optional Field)
-
-Updates User Details
 
 Example Request:
 ```
@@ -121,10 +123,11 @@ Example Response
 
 (Authenticated)
 ## PUT /admin/roleUpdate
+Updates user roles
 ### Arguments
 - Email       
 - Role 
-Updates user roles
+
 
 ```
 {
@@ -142,9 +145,10 @@ Example Response
 
 
 ## Delete /admin/delete (Authenticated)
+Deletes any specific user
 ### Arguments
 - Email       
-Deletes user 
+
 
 ```
 {
