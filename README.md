@@ -121,7 +121,7 @@ Example Response
 ```
 
 (Authenticated)
-##PUT /admin/roleUpdate
+## PUT /admin/roleUpdate
 ## Arguments
 - Email       
 - Role 
@@ -142,7 +142,7 @@ Example Response
 ```
 
 (Authenticated)
-##Delete /admin/delete
+## Delete /admin/delete
 ## Arguments
 - Email       
 Deletes user 
