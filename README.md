@@ -15,7 +15,7 @@ API URL:http://newproject-dev.ap-southeast-1.elasticbeanstalk.com
 8. DELETE /admin/delete
 
 ## POST /signup
-## Arguments
+### Arguments
 
 - FirstName        
 - LastName
@@ -38,7 +38,7 @@ Example Request:
 ```
 
 ## POST /login
-## Arguments
+### Arguments
 
 - Email
 - Password
@@ -89,7 +89,7 @@ Deletes User
 
 
 ## PUT /users/update (Authenticated)
-## Arguments
+### Arguments
 - FirstName (Optional Field)       
 - LastName (Optional Field)
 - Password (Optional Field)
@@ -121,7 +121,7 @@ Example Response
 
 (Authenticated)
 ## PUT /admin/roleUpdate
-## Arguments
+### Arguments
 - Email       
 - Role 
 Updates user roles
@@ -142,7 +142,7 @@ Example Response
 
 
 ## Delete /admin/delete (Authenticated)
-## Arguments
+### Arguments
 - Email       
 Deletes user 
 
